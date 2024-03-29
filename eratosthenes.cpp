@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-std::vector<int> sieve(int n) {
+std::vector<int> sieve(int k) {
     vector<bool> f(k + 1);
     vector<int> v;
     for (int i = 0; i <= k; i++)
