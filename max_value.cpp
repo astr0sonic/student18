@@ -1,5 +1,6 @@
 #include "max_value.h"
-
+#include <algorithm>
+using namespace std;
 double calculateMaxValue(double* a, int n) {
     double mn = a[0], mx = a[0];
     for (int i = 1; i < n; ++i)
