@@ -1,8 +1,10 @@
 #include "sundaram.h"
 #include <vector>
+#include <cmath>
 using namespace std;
 
 std::vector<int> sieve(int k) {
+    k = (k - 1) / 2;
     vector<bool> f(k + 1);
     vector<int> primes = { 2 };
     for (int i = 0; i <= k; i++)
