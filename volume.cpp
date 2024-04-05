@@ -5,7 +5,7 @@ using namespace std;
 int getMaxVolume(int a, int b, int c, int n, int* arr)
 {
     int mx = 0;
-    int st;
+    int st = 0;
     for (int i = 0; i + a < n; i++)
         if (min({ arr[i], arr[i+a] }) > mx && min({ arr[i], arr[i+a] }) <= c)
         {
