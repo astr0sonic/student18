@@ -5,7 +5,7 @@ using namespace std;
 
 bool checkBrackets(const std::string& s) {
     stringstream str(s);
-    return task5(s);
+    return task5(str);
 }
 
 bool task5(istream& f)
