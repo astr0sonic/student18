@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-bool isznak(char a) { return a == '+' || a == '-' || a == '*'; }
+bool isznak(char a) { return a == '+' || a == '-' || a == '*' || a == '/' || a == '^'; }
 
 double calculateRPN(const string& s) {
 	stack<double> a;
