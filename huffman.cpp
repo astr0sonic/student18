@@ -5,12 +5,6 @@
 #include <queue>
 using namespace std;
 
-struct node {
-    char info;
-    int freq;
-    node* left, * right;
-};
-
 struct comp
 {
     bool operator()(const node* l, const node* r) const
