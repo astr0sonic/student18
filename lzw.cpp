@@ -5,7 +5,7 @@
 
 using namespace std;
 
-vector<int> compress(string& text)
+vector<int> compress(const string& text)
 {
     map<string, int> table;
     for (int i = 0; i < 256; i++)
@@ -30,7 +30,7 @@ vector<int> compress(string& text)
     return compressed;
 }
 
-string decompress(vector<int>& compressed)
+string decompress(const vector<int>& compressed)
 {
     map<int, string> table;
     for (int i = 0; i < 256; i++)
