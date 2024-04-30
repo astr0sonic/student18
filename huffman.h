@@ -5,7 +5,6 @@ struct node {
     char info;
     int freq;
     node* left, * right;
-    node* left, * right;
 };
 
 std::string encode(const std::string& text);
